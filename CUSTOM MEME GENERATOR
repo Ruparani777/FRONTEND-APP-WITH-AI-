@@ -1,0 +1,11 @@
+Let's go over an example. Suppose you want to make a custom meme generator. In that case, you should search for AI models specifically trained to work with images, such as Stability's Stable Diffusion and OpenAI's DALL·E 3.
+
+After that, you can explore the best APIs and SDKs that you can use to take advantage of these AI models and create a basic sample.
+
+To illustrate, let's use the Replicate Node SDK, which provides a convenient method to interact with the Stable Diffusion AI model and set up a basic Node.js program that we can later integrate into our React application.
+
+Step 1. Get your token from https://replicate.com/account
+Copy the token ,paste within cat.js code
+Step 2: Install the Node SDK with the npm command: npm install replicate
+Step 3: Query the Stable Diffusion AI model via the replicate SDK.
+
