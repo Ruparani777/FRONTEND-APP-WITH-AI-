@@ -1,0 +1,34 @@
+Go to replicate folder and create cat.js 
+
+
+Paste token which we have coiped from replicate api token into auth:" copied token"
+
+
+const Replicate = require("replicate");
+const replicate = new Replicate({
+  
+  auth: "", // defaults to process.env.REPLICATE_API_TOKEN
+});
+
+async function iLoveCats(){
+    const model = "stability-ai/stable-diffusion:27b93a2413e7f36cd83da926f3656280b2931564ff050bf9575f1fdf9bcd7478";
+  const input = {
+    prompt: "a cat wearing a suit",
+  };
+  const output = await replicate.run(model, { input });
+  console.log(output[0]);
+  
+}
+
+iLoveCats()
+
+
+
+
+RUN and debug 
+
+DEBUG COMNSOLE:
+C:\Program Files\nodejs\node.exe .\cat.js
+https://replicate.delivery/pbxt/eaqTdn5mXfq590i1VU0R2Oq0KdCAGAoK5RnfN1eTCRJImOGJB/out-0.png
+
+Search onn browser we will get cat image 
